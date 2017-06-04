@@ -1,0 +1,17 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: ssl
+  version: latest
+
+handlers:
+- url: /callback
+  script: shielder.app
+
+- url: /dailies
+  script: shielder.app
+
+- url: /login
+  script: shielder.app

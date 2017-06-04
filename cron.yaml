@@ -1,0 +1,9 @@
+cron:
+- description: report new dailies
+  url: /dailies
+  timezone: Japan
+  schedule: every day 00:00
+- description: report login bonus
+  url: /login
+  timezone: Japan
+  schedule: every day 04:00
