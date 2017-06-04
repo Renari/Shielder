@@ -1,0 +1,2 @@
+# Shielder
+A line bot that does some fun things for Fate Grand Order. This was designed to run on Google Cloud, you may need to make some changes for any other cloud provider. Make sure you rename config.sample.json to config.json and fill in the relevant information obtained from your line developer console. To obtain the group id you can start the bot, invite it to your group and check your logs then restart the bot.
