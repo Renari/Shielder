@@ -80,7 +80,7 @@ def handle_message(event):
         if(event.message.text[1:] == 'time'):
             line_bot_api.reply_message(event.reply_token, TextSendMessage(text="It's currently " + datetime.now(jst).strftime('%H:%M %Z') + '.'))
         if(event.message.text[1:] == 'hug'):
-            if random.randint(1, 10) >= 5: #or line_bot_api.get_profile(event.source.user_id).display_name == "Renari":
+            if random.randint(1, 10) >= 5 or line_bot_api.get_profile(event.source.sender_id).display_name == "Renari":
                 line_bot_api.reply_message(event.reply_token, TextSendMessage(text='Um... thanks Senpai. *blushes*'))
             else:
                 line_bot_api.reply_message(event.reply_token, TextSendMessage(text='The dailies are ' + days(datetime.now(jst).strftime('%a')) + ', Senpai.'))
