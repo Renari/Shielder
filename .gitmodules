@@ -1,0 +1,3 @@
+[submodule "linebot"]
+	path = linebot
+	url = https://github.com/Renari/line-bot-sdk-python.git
